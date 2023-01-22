@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Teste</span>
+
+
+</mat-toolbar>
+
+<hr>
+
+<div class="container">
+  <div class="col-12">
+    <div class="row">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Digite</mat-label>
+        <input #peti matInput placeholder="Nome" maxlength="10">
+        <mat-hint>{{peti.value.length}}/{{peti.maxLength}}
+        </mat-hint>
+        <mat-icon matSuffix>clear</mat-icon>
+      </mat-form-field>
+
+    </div>
+    <button mat-raised-button color="primary"><a routerLink="../teste2" class="botao">Click</a></button>
+  </div>
+</div>
