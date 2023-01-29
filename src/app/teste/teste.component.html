@@ -25,3 +25,42 @@
     <button mat-raised-button color="primary"><a routerLink="../teste2" class="botao">Click</a></button>
   </div>
 </div>
+
+
+
+<button class="btn btn-danger"
+[disabled]="!novaEscola"
+(click)="createSchool()">Botao</button>
+
+<p *ngIf="cool ; else sol">{{texto}}</p>
+<ng-template #sol>
+  <p>Texto</p>
+</ng-template>
+
+<p [ngStyle]="{'background-color':schoolColor()}"
+[ngClass]="{'aberta': schoolSituation == 'aberta'}">Ok</p>
+
+<p *ngFor="let school of schools">Ok</p>
+
+<img [src]="url" [alt]="description">
+
+
+<h1 class="text-center">Okkk</h1>
+
+<div class="form-group">
+  <form>
+  <input formControlName="userName" type="text" placeholder="nome">
+  <small class="text-danger d-block">
+    texto
+  </small>
+  <button [disabled]="loginForm.invalid" type="button" class="btn btn-primary btn-block">Botao</button>
+  </form>
+
+</div>
+
+
+
+
+
+
+

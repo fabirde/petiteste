@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { TesteComponent } from './teste/teste.component';
 import { Teste2Component } from './teste2/teste2.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -27,8 +29,10 @@ import { Teste2Component } from './teste2/teste2.component';
     MatIconModule,
     MatButtonModule,
     MatInputModule,
-    MatFormFieldModule
-    
+    MatFormFieldModule,
+    MatTableModule,
+    MatTabsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
